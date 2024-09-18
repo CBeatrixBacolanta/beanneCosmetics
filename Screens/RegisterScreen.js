@@ -10,7 +10,7 @@ export default function App() {
     <View style={styles.container}>
       <StatusBar style="auto" />
 
-      <ImageBackground source={require('./assets/registration.jpg')} style={styles.imageBackground} />
+      <ImageBackground source={require('beanneCosmetics\assets\registration.jpg')} style={styles.ImageBackground} />
 
       <View style={styles.textContainer}>
         <Text style={styles.header1}>UNVEIL YOUR{"\n"}RADIANCE</Text>
@@ -50,7 +50,7 @@ export default function App() {
           </TouchableOpacity>
         </View>
 
-
+        
       </View>
     </View>
   );
@@ -149,14 +149,14 @@ const styles = StyleSheet.create({
     marginRight: 10,
   },
   button: {
-    backgroundColor: 'pink',
+    backgroundColor: '#606060',
     paddingVertical: 10,
     paddingHorizontal: 20,
-    borderRadius: 19,
+    borderRadius: 5,
   },
   buttonText: {
     fontSize: 16,
     fontWeight: 'bold',
-    color: 'gray',
+    color: 'white',
   },
 });
