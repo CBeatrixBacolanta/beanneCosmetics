@@ -7,57 +7,57 @@ const HomeScreen = () => {
   const [wishlistTrending, setWishlistTrending] = React.useState({});
 
   const banners = [
-    { id: '1', imageUrl: require('./assets/prom1.png') },
-    { id: '2', imageUrl: require('./assets/prom2.png') },
-    { id: '3', imageUrl: require('./assets/prom3.png') },
-    { id: '4', imageUrl: require('./assets/prom4.png') },
+    { id: '1', imageUrl: require('../Images/prom1.png') },
+    { id: '2', imageUrl: require('../Images/prom2.png') },
+    { id: '3', imageUrl: require('../Images/prom3.png') },
+    { id: '4', imageUrl: require('../Images/prom4.png') },
   ];
 
   const bestSellers = [
-    { id: '1', name: 'Matte Lipstick', price: '$19.99', imageUrl: require('./assets/best1.png') },
-    { id: '2', name: 'Beach Babe Brow Gel', price: '$29.99', imageUrl: require('./assets/best5.png') },
-    { id: '3', name: 'BeanneGlow Cream', price: '$39.99', imageUrl: require('./assets/best2.png') },
-    { id: '4', name: 'Revitalizing Blushes', price: '$49.99', imageUrl: require('./assets/best4.png') },
-    { id: '5', name: 'All Hours Foundation', price: '$49.99', imageUrl: require('./assets/best3.png') },
+    { id: '1', name: 'Matte Lipstick', price: '$19.99', imageUrl: require('../assets/Images/best1.png') },
+    { id: '2', name: 'Beach Babe Brow Gel', price: '$29.99', imageUrl: require('../assets/Images.best5.png') },
+    { id: '3', name: 'BeanneGlow Cream', price: '$39.99', imageUrl: require('../assets/Images/best2.png') },
+    { id: '4', name: 'Revitalizing Blushes', price: '$49.99', imageUrl: require('../assets/Images/best4.png') },
+    { id: '5', name: 'All Hours Foundation', price: '$49.99', imageUrl: require('../assets/Images/besr3.png') },
   ];
 
   const trendingProducts = [
-    { id: '1', name: 'VelvetTouch Blush', price: '$25.99', imageUrl: require('./assets/tren1.png') },
-    { id: '2', name: 'Scarlet Seduction', price: '$30.99', imageUrl: require('./assets/tren2.png') },
-    { id: '3', name: 'Midnight Flick Eyeliner', price: '$35.99', imageUrl: require('./assets/tren3.png') },
-    { id: '4', name: 'All Hours Foundation', price: '$40.99', imageUrl: require('./assets/tren4.png') },
-    { id: '5', name: 'Soft Radiance Foundation', price: '$25.99', imageUrl: require('./assets/tren5.png') },
-    { id: '6', name: 'LuxeLips Liquid Lipstick', price: '$30.99', imageUrl: require('./assets/tren6.png') },
-    { id: '7', name: 'Perfect Glow Powder', price: '$35.99', imageUrl: require('./assets/tren7.png') },
-    { id: '8', name: 'Fierce Flick Mascara', price: '$40.99', imageUrl: require('./assets/tren8.png') },
+    { id: '1', name: 'VelvetTouch Blush', price: '$25.99', imageUrl: require('../assets/Images/tren1.png') },
+    { id: '2', name: 'Scarlet Seduction', price: '$30.99', imageUrl: require('../assets/Images/tren2.png') },
+    { id: '3', name: 'Midnight Flick Eyeliner', price: '$35.99', imageUrl: require('../assets/Images/tren3.png') },
+    { id: '4', name: 'All Hours Foundation', price: '$40.99', imageUrl: require('../assets/Images/tren4.png') },
+    { id: '5', name: 'Soft Radiance Foundation', price: '$25.99', imageUrl: require('../assets/Images/tren5.png') },
+    { id: '6', name: 'LuxeLips Liquid Lipstick', price: '$30.99', imageUrl: require('../assets/Images/tren6.png') },
+    { id: '7', name: 'Perfect Glow Powder', price: '$35.99', imageUrl: require('../assets/Images/tren7.png') },
+    { id: '8', name: 'Fierce Flick Mascara', price: '$40.99', imageUrl: require('../assets/Images/tren8.png') },
   ];
 
   const customerReviews = [
     {
       id: '1',
       name: 'Jane Doe',
-      profileImage: require('./assets/customer1.png'),
+      profileImage: require('../assets/Image/customer1.png'),
       rating: 5,
       review: 'This product is amazing! Highly recommend it.'
     },
     {
       id: '2',
       name: 'John Smith',
-      profileImage: require('./assets/customer2.png'),
+      profileImage: require('../assets/Images/customer2.png'),
       rating: 4,
       review: 'Great quality and value for money.'
     },
     {
       id: '3',
       name: 'Alice Johnson',
-      profileImage: require('./assets/customer3.png'),
+      profileImage: require('../assets/Images/customer3.png'),
       rating: 5,
       review: 'Love it! Will definitely buy again.'
     },
     {
       id: '4',
       name: 'Michael Brown',
-      profileImage: require('./assets/customer4.png'),
+      profileImage: require('../assets/Images/customer4.png'),
       rating: 4,
       review: 'Satisfied with the purchase. Worth it!'
     },
@@ -122,19 +122,19 @@ const HomeScreen = () => {
 
         <View style={styles.quickActions}>
           <TouchableOpacity style={styles.actionButton}>
-            <Image source={require('./assets/ic1.png')} style={styles.icon} />
+            <Image source={require('../assets/Images/ic1.png')} style={styles.icon} />
             <Text style={styles.actionText}>Lippies</Text>
           </TouchableOpacity>
           <TouchableOpacity style={styles.actionButton}>
-            <Image source={require('./assets/ic2.png')} style={styles.icon} />
+            <Image source={require('../assets/Images/ic2.png')} style={styles.icon} />
             <Text style={styles.actionText}>Foundation</Text>
           </TouchableOpacity>
           <TouchableOpacity style={styles.actionButton}>
-            <Image source={require('./assets/ic3.png')} style={styles.icon} />
+            <Image source={require('../assets/Images/ic3.png')} style={styles.icon} />
             <Text style={styles.actionText}>Mascaras</Text>
           </TouchableOpacity>
           <TouchableOpacity style={styles.actionButton}>
-            <Image source={require('./assets/ic4.png')} style={styles.icon} />
+            <Image source={require('../assets/Images/ic4.png')} style={styles.icon} />
             <Text style={styles.actionText}>Blushes</Text>
           </TouchableOpacity>
         </View>

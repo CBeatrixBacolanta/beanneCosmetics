@@ -7,7 +7,7 @@ const Welcome = () => {
       {/* Logo Section */}
       <View style={styles.logoContainer}>
         <Image
-          source={require('./assets/welcome.png')}
+          source={require('../Images/welcome.png')}
           style={styles.logoImage}
         />
       </View>

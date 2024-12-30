@@ -10,7 +10,7 @@ const LoginScreen = () => {
     <View style={styles.container}>
       {/* Background Image */}
       <ImageBackground
-        source={require('./assets/lockscreen.png')} // Replace with your actual image path
+        source={require('../Images/lockscreen2.png')} // Replace with your actual image path
         style={styles.imageBackground}
       >
         <View style={styles.overlay} />
