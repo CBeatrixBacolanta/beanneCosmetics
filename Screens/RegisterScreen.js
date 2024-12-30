@@ -59,7 +59,7 @@ export default function App() {
     <View style={styles.container}>
       <StatusBar style="auto" />
       <ImageBackground
-        source={require('../Images/registration.jpg')} // Check the path
+        source={require('../assets/Images/Registration.jpg')} // Check the path
         style={styles.imageBackground}
       />
       <View style={styles.textContainer}>
