@@ -2,7 +2,6 @@ import React, { useState } from 'react';
 import { StyleSheet, Text, View, TextInput, TouchableOpacity, ImageBackground } from 'react-native';
 
 const LoginScreen = () => {
-  const [isChecked, setIsChecked] = useState(false);
   const [username, setUsername] = useState('');
   const [password, setPassword] = useState('');
 
@@ -10,7 +9,7 @@ const LoginScreen = () => {
     <View style={styles.container}>
       {/* Background Image */}
       <ImageBackground
-        source={require('./assets/image 1.png')}
+        source={require('../Images/image1.png')} // Replace with your actual image path
         style={styles.imageBackground}
       >
         <View style={styles.overlay} />
@@ -43,14 +42,9 @@ const LoginScreen = () => {
 
           {/* Remember me and Forgot password */}
           <View style={styles.optionsContainer}>
-            {/* Custom Checkbox */}
-            <TouchableOpacity
-              style={styles.checkboxContainer}
-              onPress={() => setIsChecked(!isChecked)}
-            >
-              <View style={isChecked ? styles.checkedBox : styles.uncheckedBox} />
+            <View style={styles.checkboxContainer}>
               <Text style={styles.rememberMe}>Remember me</Text>
-            </TouchableOpacity>
+            </View>
             <TouchableOpacity>
               <Text style={styles.forgotPassword}>Forgot Password?</Text>
             </TouchableOpacity>
@@ -90,16 +84,17 @@ const styles = StyleSheet.create({
     backgroundColor: 'rgba(255, 255, 255, 0.4)',
   },
   headerContainer: {
-    position: 'absolute',
-    top: '6%',
-    width: '100%',
-    paddingLeft: 30,
+   position: 'absolute',
+   top: "6%",
+   width: '100%',
+   paddingLeft: 30,
   },
   headerText: {
-    fontSize: 30,
+    fontSize: 24,
     fontWeight: '900',
     color: '#fff',
     textAlign: 'left',
+    Top: 0,
   },
   subHeaderText: {
     fontSize: 20,
@@ -108,17 +103,17 @@ const styles = StyleSheet.create({
   login: {
     color: 'white',
     fontSize: 27,
-    fontWeight: '900',
+    fontWeight: "900",
     textAlign: 'left',
     paddingBottom: 20,
   },
   loginContainer: {
     flex: 1,
     height: 'auto',
-    width: '100%',
-    backgroundColor: '#EC297B',
+    width: "100%",
+    backgroundColor: "#EC297B",
     bottom: 0,
-    position: 'absolute',
+    position: "absolute",
     paddingVertical: 20,
     paddingHorizontal: 20,
     borderTopRightRadius: 50,
@@ -138,23 +133,6 @@ const styles = StyleSheet.create({
     justifyContent: 'space-between',
     alignItems: 'center',
     marginBottom: 20,
-  },
-  checkboxContainer: {
-    flexDirection: 'row',
-    alignItems: 'center',
-  },
-  uncheckedBox: {
-    width: 20,
-    height: 20,
-    borderWidth: 2,
-    borderColor: '#999',
-    marginRight: 10,
-  },
-  checkedBox: {
-    width: 20,
-    height: 20,
-    backgroundColor: '#000',
-    marginRight: 10,
   },
   rememberMe: {
     color: '#555',
@@ -186,5 +164,11 @@ const styles = StyleSheet.create({
   signUpLink: {
     color: '#000000',
     fontWeight: 'bold',
+  },
+  socialContainer: {
+    flexDirection: 'row',
+    marginTop: 20,
+    justifyContent: 'space-around',
+    width: '60%',
   },
 });
