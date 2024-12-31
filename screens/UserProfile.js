@@ -36,7 +36,7 @@ const UserProfile = ({ navigation }) => {
         </View>
         <View style={styles.inputRow}>
           <Text style={styles.inputLabel}>Instagram</Text>
-          <TextInput style={styles.input} value="@aplusdesign" editable={false}/>
+          <TextInput style={styles.input} value="@anii.Max" editable={false}/>
         </View>
         <View style={styles.inputRow}>
           <Text style={styles.inputLabel}>Email</Text>
@@ -52,11 +52,6 @@ const UserProfile = ({ navigation }) => {
           />
         </View>
       </View>
-
-      {/* Edit Profile Button */}
-      <TouchableOpacity style={styles.editButton}>
-        <Text style={styles.buttonText}>Edit Profile</Text>
-      </TouchableOpacity>
 
       {/* Logout Button */}
       <TouchableOpacity style={styles.logoutButton} onPress={handleLogout}>
@@ -109,22 +104,9 @@ const styles = StyleSheet.create({
     paddingHorizontal: 10,
     backgroundColor: '#f9f9f9',
   },
-  editButton: {
-    width: '100%',
-    backgroundColor: '#6a1b9a',
-    padding: 12,
-    borderRadius: 5,
-    alignItems: 'center',
-    marginBottom: 10,
-  },
-  buttonText: {
-    color: '#fff',
-    fontSize: 16,
-    fontWeight: 'bold',
-  },
   logoutButton: {
     width: '100%',
-    backgroundColor: '#f44336',
+    backgroundColor: '#EC297B',
     padding: 12,
     borderRadius: 5,
     alignItems: 'center',
