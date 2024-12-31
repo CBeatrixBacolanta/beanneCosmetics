@@ -1,7 +1,7 @@
 import { useState } from 'react';
 import { StatusBar } from 'expo-status-bar';
 import { ImageBackground, StyleSheet, Text, View, TextInput, TouchableOpacity, ScrollView } from 'react-native';
-import { Ionicons } from '@expo/vector-icons'; // Install via 'expo install @expo/vector-icons'
+import { Ionicons } from '@expo/vector-icons';
 import { useNavigation } from '@react-navigation/native';
 import { horizontalScale, verticalScale, moderateScale } from '../utils/Dimensions';
 
@@ -19,16 +19,14 @@ const RegisterScreen = () => {
     password: '',
     confirmPassword: '',
   });
-  const [showPassword, setShowPassword] = useState(false); // Toggle for password visibility
-  const [showConfirmPassword, setShowConfirmPassword] = useState(false); // For the confirm password visibility
-  const [notification, setNotification] = useState(''); // Notification message
+  const [showPassword, setShowPassword] = useState(false);
+  const [showConfirmPassword, setShowConfirmPassword] = useState(false);
+  const [notification, setNotification] = useState('');
 
-  // Update form data
   const handleChange = (field, value) => {
     setFormData({ ...formData, [field]: value });
   };
 
-  // Validate input fields
   const validateFields = () => {
     if (step === 1) {
       const { firstName, lastName, email, phone } = formData;
@@ -52,7 +50,6 @@ const RegisterScreen = () => {
     return true;
   };
 
-  // Handle next step
   const handleNext = () => {
     if (validateFields()) {
       setStep(step + 1);
@@ -63,7 +60,7 @@ const RegisterScreen = () => {
     <View style={styles.container}>
       <StatusBar style="auto" />
       <ImageBackground
-        source={require('../assets/Images/Registration.jpg')} // Check the path
+        source={require('../assets/Images/Registration.jpg')}
         style={styles.imageBackground}
       >
         <View style={styles.textContainer}>
@@ -191,7 +188,6 @@ const RegisterScreen = () => {
               )}
             </View>
             
-            {/* Add bottom padding to ensure content is scrollable */}
             <View style={{ height: 20 }} />
           </ScrollView>
         </View>
@@ -206,8 +202,7 @@ const styles = StyleSheet.create({
   },
   imageBackground: {
     flex: 1,
-    width: '100%',
-    height: '100%',
+    resizeMode: 'cover',
   },
   textContainer: {
     position: 'absolute',
@@ -216,19 +211,18 @@ const styles = StyleSheet.create({
     paddingLeft: 30,
   },
   header1: {
-    color: 'white',
+    color: 'black',
     fontSize: moderateScale(33),
     fontWeight: '900',
     textAlign: 'left',
-    top: 0,
   },
   quoteTxt: {
-    color: 'white',
-    fontSize: 20,
+    color: 'black',
+    fontSize: 23,
   },
   regBox: {
     flex: 1,
-    maxHeight: '75%', // Adjust this value as needed
+    maxHeight: '75%',
     width: '100%',
     backgroundColor: '#EC297B',
     bottom: 0,
@@ -291,7 +285,7 @@ const styles = StyleSheet.create({
     padding: 9,
     backgroundColor: 'white',
     borderRadius: 29,
-    paddingRight: 40, // Make space for the eye icon
+    paddingRight: 40,
   },
   checkboxContainer: {
     flexDirection: 'row',
@@ -351,7 +345,7 @@ const styles = StyleSheet.create({
     backgroundColor: '#FF69B4',
     borderRadius: 19,
     marginLeft: 20,
-    opacity: 0.5, // Indicate disabled state
+    opacity: 0.5,
   },
   notification: {
     color: 'yellow',

@@ -7,14 +7,13 @@ import Welcome from './screens/Welcome';
 import RegisterScreen from './screens/RegisterScreen';
 import LoginScreen from './screens/LoginScreen';
 import HomeScreen from './screens/HomeScreen';
-import UserProfile from './screens/UserProfile'; // Import the UserProfile screen
+import UserProfile from './screens/UserProfile';
 
 const Stack = createNativeStackNavigator();
 
 export default function App() {
   React.useEffect(() => {
     const subscription = Dimensions.addEventListener('change', () => {
-      // Handle orientation changes if needed
     });
 
     return () => subscription?.remove();
@@ -70,7 +69,7 @@ export default function App() {
           >
             {({ navigation }) => (
               <UserProfile
-                navigation={navigation} // Pass navigation to UserProfile
+                navigation={navigation}
               />
             )}
           </Stack.Screen>

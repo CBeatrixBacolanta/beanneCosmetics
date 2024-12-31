@@ -3,7 +3,6 @@ import { View, Text, StyleSheet, TextInput, TouchableOpacity, Image, ScrollView 
 
 const UserProfile = ({ navigation }) => {
   const handleLogout = () => {
-    // Clear navigation stack and navigate to Welcome
     navigation.reset({
       index: 0,
       routes: [{ name: 'Welcome' }],

@@ -7,13 +7,13 @@ const LoginScreen = () => {
   const navigation = useNavigation();
   const [username, setUsername] = useState('');
   const [password, setPassword] = useState('');
-  const [isChecked, setIsChecked] = useState(false); // Checkbox state
+  const [isChecked, setIsChecked] = useState(false);
 
   return (
     <View style={styles.container}>
       {/* Background Image */}
       <ImageBackground
-        source={require('../assets/Images/lockscreen2.png')} // Replace with your actual image path
+        source={require('../assets/Images/lockscreen2.png')}
         style={styles.imageBackground}
       >
         <View style={styles.overlay} />
@@ -101,18 +101,18 @@ const styles = StyleSheet.create({
   },
   headerContainer: {
     position: 'absolute',
-    top: verticalScale(40),
+    top: verticalScale(65),
     paddingLeft: horizontalScale(30),
   },
   headerText: {
-    fontSize: moderateScale(24),
+    fontSize: moderateScale(33),
     fontWeight: '900',
-    color: '#fff',
+    color: 'black',
     textAlign: 'left',
   },
   subHeaderText: {
-    fontSize: 20,
-    color: 'white',
+    fontSize: 23,
+    color: 'black',
   },
   login: {
     color: 'white',
@@ -151,7 +151,7 @@ const styles = StyleSheet.create({
   },
   checkboxContainer: {
     flexDirection: 'row',
-    alignItems: 'center', // Aligns checkbox and text vertically
+    alignItems: 'center',
   },
   checkbox: {
     width: 20,
@@ -160,7 +160,7 @@ const styles = StyleSheet.create({
     borderColor: '#999',
     justifyContent: 'center',
     alignItems: 'center',
-    marginRight: 10, // Adds spacing between checkbox and text
+    marginRight: 10,
   },
   checkmark: {
     color: '#000',
@@ -169,7 +169,7 @@ const styles = StyleSheet.create({
   },
   rememberMe: {
     color: '#ffffff',
-    fontSize: 15, // Ensures consistent font size
+    fontSize: 15,
   },  
   forgotPassword: {
     color: '#ffffff',

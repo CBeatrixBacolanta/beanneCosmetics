@@ -424,7 +424,7 @@ const styles = StyleSheet.create({
     backgroundColor: 'black',
     paddingVertical: 15,
     marginHorizontal: 15,
-    marginTop: -10, // Adjusted to be closer to the trending products
+    marginTop: -10,
     borderRadius: 10,
     alignItems: 'center',
   },
@@ -437,7 +437,7 @@ const styles = StyleSheet.create({
       backgroundColor: 'black',
       paddingVertical: 15,
       marginHorizontal: 15,
-      marginTop: -10, // Adjusted to be closer to the trending products
+      marginTop: -10,
       borderRadius: 10,
       alignItems: 'center',
     },
